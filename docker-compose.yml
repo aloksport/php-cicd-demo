@@ -1,0 +1,10 @@
+
+services:
+  app:
+    build: .
+    image: php-cicd-demo
+    container_name: php-cicd-demo
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www/html          # ← This is the key
